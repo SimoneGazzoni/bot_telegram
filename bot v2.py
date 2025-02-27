@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 # 📌 Costanti Globali
 TWO_DAYS = 2 * 24 * 60 * 60      # Timer di default: 2 giorni (in secondi)
 REMINDER_INTERVAL = 4 * 60 * 60    # Reminder ogni 4 ore (in secondi)
-DATA_FILE = "bot_data.json"
+DATA_FILE = "bot_data_old.json"
 EGGS_FILE = "eggs.csv"
 
 # ID del topic consentito
@@ -44,7 +44,7 @@ def get_chat_data(chat_id, bot_data):
 # 🔍 Funzione per controllare se il messaggio proviene dal topic consentito
 def check_topic(update: Update) -> bool:
     topic_id = getattr(update.message, "message_thread_id", None)
-
+    logger.info(topic_id)
     return topic_id == ALLOWED_TOPIC_ID
 
 
@@ -248,7 +248,7 @@ def handle_message(update: Update, context: CallbackContext):
         return
 
     # Se il messaggio è del tipo "<numero> uova", registra il numero di uova
-    match_uova = re.search(r"(\d+)\s*uova$", text)
+    match_uova = re.search(r"(\+?\d+)\s*uova", text, re.IGNORECASE)
     if match_uova:
         eggs = int(match_uova.group(1))
         if eggs < 0:
