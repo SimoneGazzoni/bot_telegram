@@ -324,7 +324,7 @@ def restore_schedules(updater: Updater):
                 context={"chat_id": int(chat_id), "topic_id": ALLOWED_TOPIC_ID},
                 name=f"reminder_{chat_id}"
             )
-            logger.info(f"🔄 Ripristinati i promemoria per chat {chat_id}.")
+            logger.info(f"🔄 Ripristinati i promemori  a per chat {chat_id}.")
 
 def main():
     TOKEN = "7213666662:AAHrgOCJZJxk7t0eRZ0irLfoKrMnIz3d7sU"
