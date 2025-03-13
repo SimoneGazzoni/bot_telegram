@@ -67,6 +67,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.bot v3">
     <configuration name="bot v2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Bot telegram" />
@@ -190,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740052159301</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="cazo">
+      <option name="closed" value="true" />
+      <created>1741596542314</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741596542314</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,6 +219,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cazzo" />
-    <option name="LAST_COMMIT_MESSAGE" value="cazzo" />
+    <MESSAGE value="cazo" />
+    <option name="LAST_COMMIT_MESSAGE" value="cazo" />
   </component>
 </project>
